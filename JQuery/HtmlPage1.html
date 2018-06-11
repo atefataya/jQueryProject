@@ -4,15 +4,17 @@
     <title></title>
 	<meta charset="utf-8" />
     <script src="scripts/jquery-3.3.1.js"></script>
-</head>
-<body>
-    <script type="text/javascript">       
-        $(document).ready(function () {
-            $('#button1').click(function () {
-                alert('jQuery Tutorial');
-            });
+    <script type="text/javascript">
+        $(window).on('load',function () {
+            $('#div1').html("Height = " + $('#img1').height() + "<br/>" + "Width = " + $('#img1').width());
         });
     </script>
-    <input type="button" id="button1" value="Click Me"/>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <img id="img1" src="red blossom.jpg" />
+   
 </body>
 </html>
